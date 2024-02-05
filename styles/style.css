@@ -17,13 +17,12 @@
 
 .header__links-list-item{
   border-bottom: 1px solid #000000;
-  list-style: circle;
-  list-style-type: none;
+  list-style-type: circle;
 }
 
 .header__links-list-item_no-bullit{
   border-bottom: none;
-  list-style: none;
+  list-style-type: none;
 }
 
 .header__link{
@@ -31,6 +30,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  letter-spacing: 0.01em;
   text-decoration: none;
 }
 
@@ -54,4 +54,100 @@
   font-size: 18px;
   line-height: 24px;
   text-decoration: none;
+}
+
+.cover{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 757px;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+}
+
+.overlay{
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 60%;
+  background-color: #000000;
+}
+
+.cover__title{
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  height: 355px;
+  margin: 165px auto 0;
+  color: #FFFFFF;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 100px;
+  text-transform: uppercase;
+}
+
+.aligned-text{
+  width: 100%;
+  line-height: 115px;
+  letter-spacing: 0.3em;
+}
+
+.aligned-text_center{
+  width: 100%;
+  line-height: 100px;
+  letter-spacing: 0.3em;
+  text-align: center;
+}
+
+.aligned-text_right{
+  width: 100%;
+  line-height: 100px;
+  letter-spacing: 0.3em;
+  text-align: right;
+}
+
+.letter-spacing-extended{
+  letter-spacing: 0.6em;
+}
+
+.no-letter-spacing{
+  letter-spacing: 0;
+}
+
+.cover__description{
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 50px 51px 78px;
+}
+
+.cover__description-text{
+  color: #fff;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: left;
+  text-transform: uppercase;
+  word-spacing: 0.85em;
+}
+
+.bet-button{
+  width: 256px;
+  height: 51px;
+  border: 1px solid #FFFFFF;
+  color: #fff;
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
 }
