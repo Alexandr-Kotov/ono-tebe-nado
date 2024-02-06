@@ -9,8 +9,10 @@
 * HTML
 * CSS
 
-* [Ссылка на макет в Figma](https://www.figma.com/file/8KwhMpv8qnDocX4NVFQBpn/Оно-тебе-надо?type=design&node-id=0%3A1&mode=design&t=SFxhzV6vT3fWUSjK-1)
+## Ссылки на проект
 
-* [Ссылка на репозиторий](https://github.com/Alexandr-Kotov/ono-tebe-nado)
+репозиторий https://github.com/Alexandr-Kotov/ono-tebe-nado
+
+* [Ссылка на макет в Figma](https://www.figma.com/file/8KwhMpv8qnDocX4NVFQBpn/Оно-тебе-надо?type=design&node-id=0%3A1&mode=design&t=SFxhzV6vT3fWUSjK-1)
 
 * [Ссылка на сайт Оно тебе надо — аукцион вещей, в которые никто не верил](https://alexandr-kotov.github.io/ono-tebe-nado/)
