@@ -231,6 +231,7 @@ address a {
   border-bottom: 1px solid #000;
   font-size: 20px;
   line-height: 23px;
+  cursor: pointer;
 }
 
 .about {
@@ -308,6 +309,7 @@ footer .address {
   border-bottom: 1px solid #000000;
   font-size: 18px;
   line-height: 21px;
+  text-decoration: none;
 }
 
 .footer__menu-link_active {
