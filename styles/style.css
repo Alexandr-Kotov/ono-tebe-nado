@@ -11,25 +11,30 @@
 
 .header__links-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  width: 392px;
+  row-gap: 10px;
+  max-width: 392px;
 }
 
 .header__links-list-item {
-  border-bottom: 1px solid #000000;
   list-style-type: circle;
 }
 
 .header__links-list-item_no-bullit {
-  border-bottom: none;
   list-style-type: none;
 }
 
 .header__link {
+  border-bottom: 1px solid #000000;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.01em;
   text-decoration: none;
+}
+
+.header__link_active {
+  border-bottom: none;
 }
 
 .header__logo-image {
@@ -39,21 +44,23 @@
 }
 
 .address {
-  height: 98px;
   margin-left: auto;
+  padding-top: 5px;
   padding-right: 25px;
   font-style: normal;
 }
 
-.header__address {
-  width: 240px;
+.address__link {
+  border-bottom: 1px solid #000;
   font-size: 18px;
   line-height: 24px;
   text-decoration: none;
 }
 
-address a {
-  border-bottom: 1px solid #000;
+.address__text{
+  max-width: 240px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .cover {
@@ -61,7 +68,7 @@ address a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 757px;
+  min-height: 757px;
   background-image: url(../images/cover.jpg);
   background-size: cover;
 }
@@ -79,9 +86,10 @@ address a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  width: 1000px;
-  height: 355px;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 355px;
   margin: 165px auto 0;
   color: #FFFFFF;
   font-weight: 700;
@@ -90,23 +98,18 @@ address a {
 }
 
 .aligned-text {
-  width: 100%;
   line-height: 115px;
   letter-spacing: 0.3em;
 }
 
 .aligned-text_center {
-  width: 100%;
+  align-self: center;
   line-height: 100px;
-  letter-spacing: 0.3em;
-  text-align: center;
 }
 
 .aligned-text_right {
-  width: 100%;
+  align-self: flex-end;
   line-height: 100px;
-  letter-spacing: 0.3em;
-  text-align: right;
 }
 
 .letter-spacing-extended {
@@ -123,6 +126,7 @@ address a {
   justify-content: space-between;
   align-items: center;
   margin: 0 50px 51px 78px;
+  font-weight: 400;
 }
 
 .cover__description-text {
@@ -139,6 +143,7 @@ address a {
   height: 51px;
   border: 1px solid #FFFFFF;
   color: #fff;
+  font-family: Raleway;
   font-weight: 500;
   font-size: 22px;
   line-height: 26px;
@@ -154,6 +159,7 @@ address a {
 }
 
 .lots__heading {
+  margin-bottom: 27px;
   margin-left: 40px;
   font-weight: 700;
   font-size: 40px;
@@ -163,14 +169,15 @@ address a {
 
 .lots__card-list {
   display: flex;
-  justify-content: space-between;
-  margin: 27px 0 30px;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 30px;
   list-style-type: none;
 }
 
 .lots__card-list-item {
-  width: 334px;
-  height: 563px;
+  max-width: 334px;
+  min-height: 563px;
 }
 
 .card-link {
@@ -205,8 +212,7 @@ address a {
 .card__title {
   position: relative;
   z-index: 1;
-  width: 254px;
-  margin: 51px auto 0;
+  margin: 51px 40px 0;
   color: #fff;
   font-weight: 700;
   font-size: 22px;
@@ -218,8 +224,7 @@ address a {
 .card__text {
   position: relative;
   z-index: 2;
-  width: 254px;
-  margin: 0 auto 48px;
+  margin: 0 40px 48px;
   color: #fff;
   font-size: 20px;
   line-height: 24px;
@@ -231,18 +236,15 @@ address a {
   border-bottom: 1px solid #000;
   font-size: 20px;
   line-height: 23px;
-  cursor: pointer;
+  text-decoration: none;
 }
 
 .about {
-  max-width: 1052px;
-  margin: 0 auto;
-}
-
-.about__column {
   display: grid;
   grid-template-columns: 287px 1fr;
   justify-items: end;
+  max-width: 1052px;
+  margin: 0 auto;
 }
 
 .about__logo {
@@ -291,13 +293,12 @@ address a {
   margin: 180px auto 80px;
 }
 
-footer .address {
+.footer__address {
   margin-left: 0;
   padding-right: 0;
 }
 
 .footer__menu-list {
-  width: 149px;
   list-style-type: none;
 }
 
@@ -318,8 +319,10 @@ footer .address {
 
 .footer__social-list {
   display: flex;
-  justify-content: space-between;
-  width: 240px;
+  flex-wrap: wrap;
+  gap: 20px 48px;
+  width: 100%;
+  max-width: 240px;
   list-style-type: none;
 }
 
